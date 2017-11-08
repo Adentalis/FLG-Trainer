@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FLG-Trainer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FLG_Trainer_jar</output-path>
+    <root id="archive" name="FLG-Trainer.jar">
+      <element id="module-output" name="FLG-Trainer" />
+    </root>
+  </artifact>
+</component>

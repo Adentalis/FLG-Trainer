@@ -1,0 +1,71 @@
+        #exit{
+
+         -fx-background-image: url("/data/png/exit.png");
+         -fx-background-color: #3a4553;
+        }
+
+        #exit:hover{
+
+        -fx-background-image: url("/data/png/exit.png");
+        -fx-background-color: #1b4272;
+        }
+
+        #back{
+
+            -fx-background-image: url("/data/png/left.png");
+            -fx-background-color: #3a4553;
+            }
+
+        #back:hover{
+
+             -fx-background-image: url("/data/png/left.png");
+             -fx-background-color: #1b4272;
+           }
+
+        #hide{
+
+            -fx-background-image: url("/data/png/hide.png");
+            -fx-background-color: #3a4553;
+            }
+
+        #hide:hover{
+
+             -fx-background-image: url("/data/png/hide.png");
+             -fx-background-color: #1b4272;
+           }
+
+           #rightMenu{
+             -fx-background-image: url("rightMainMenu.png");
+           }
+
+
+       #lernen{
+        -fx-background-color: #2559b5;
+       }
+       #lernen:hover{
+               -fx-background-color: #184aa2;
+              }
+
+
+         #train{
+            -fx-background-color: #2559b5;
+               }
+           #train:hover{
+                -fx-background-color: #184aa2;
+                      }
+
+
+        #abfrage{
+           -fx-background-color: #2559b5;
+              }
+         #abfrage:hover{
+             -fx-background-color: #184aa2;
+                     }
+
+
+       #survival{
+              -fx-background-color: #2559b5;
+             }
+       #survival:hover{
+              -fx-background-color: #184aa2;
+                  }

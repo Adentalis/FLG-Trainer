@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--fxml file für das Klassen auswählen im oberen Menübereich-->
+
+
+<FlowPane alignment="TOP_CENTER" columnHalignment="CENTER" hgap="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #2b8930;" stylesheets="@../data/css/class.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChooseClassController">
+   <children>
+      <Button fx:id="button5" mnemonicParsing="false" onAction="#button5Clicked" prefHeight="45.0" prefWidth="45.0" text="5.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button6" mnemonicParsing="false" onAction="#button6Clicked" prefHeight="45.0" prefWidth="45.0" text="6.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button7" mnemonicParsing="false" onAction="#button7Clicked" prefHeight="45.0" prefWidth="45.0" text="7.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" text="Übungghh" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="button8" mnemonicParsing="false" onAction="#button8Clicked" prefHeight="45.0" prefWidth="45.0" text="8.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button9" mnemonicParsing="false" onAction="#button9Clicked" prefHeight="45.0" prefWidth="45.0" text="9.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button10" alignment="CENTER" mnemonicParsing="false" onAction="#button10Clicked" prefHeight="45.0" prefWidth="45.0" text="10.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</FlowPane>

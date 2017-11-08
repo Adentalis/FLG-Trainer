@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="wholeMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuController">
+    <center>
+       <fx:include source="start.fxml" />
+    </center>
+    <top>
+        <Pane fx:id="menubar" onMouseDragged="#setOnMouseDragged" onMousePressed="#setOnMousePressed" prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #3a4553;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="back" disable="true" mnemonicParsing="false" onAction="#changeToMainMenu" opacity="0.0" prefHeight="39.0" prefWidth="40.0" stylesheets="@../data/css/style.css" />
+                <Button fx:id="exit" layoutX="760.0" mnemonicParsing="false" onAction="#closeProgramm" prefHeight="39.0" prefWidth="40.0" stylesheets="@../data/css/style.css" />
+                <Button fx:id="hide" layoutX="720.0" mnemonicParsing="false" onAction="#minimizeProgramm" prefHeight="39.0" prefWidth="40.0" stylesheets="@../data/css/style.css" />
+            </children>
+        </Pane>
+    </top>
+   <left>
+      <VBox fx:id="leftMenui" prefHeight="552.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #2559b5;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="lernen" graphicTextGap="15.0" mnemonicParsing="false" onAction="#changeToLernen" prefHeight="60.0" prefWidth="200.0" stylesheets="@../data/css/style.css" text="Lernen" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../data/png/lernen.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets right="75.0" />
+               </padding>
+            </Button>
+            <Button fx:id="train" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeToTrain" prefHeight="60.0" prefWidth="200.0" stylesheets="@../data/css/style.css" text="Üben" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../data/png/training.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets right="85.0" />
+               </padding>
+            </Button>
+            <Button fx:id="abfrage" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeToAbfrage" prefHeight="60.0" prefWidth="200.0" stylesheets="@../data/css/style.css" text="Abfrage" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="abfrageImage" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../data/png/abfrage.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets right="70.0" />
+               </padding>
+            </Button>
+            <Button fx:id="survival" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeToSurvival" prefHeight="60.0" prefWidth="200.0" style="-: #2559b5;" stylesheets="@../data/css/style.css" text="Survival" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../data/png/survival.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets right="70.0" />
+               </padding>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+
+        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="236.0" text="10 klasse shit">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <FlowPane hgap="10.0" prefHeight="95.0" prefWidth="600.0" vgap="10.0">
+            <children>
+                <Button mnemonicParsing="false" text="Intro" />
+                <Button mnemonicParsing="false" text="A global Sport" />
+                <Button mnemonicParsing="false" text="An internet lifestyle" />
+                <Button mnemonicParsing="false" text="Play fair" />
+                <Button mnemonicParsing="false" text="Working on a project" />
+                <Button mnemonicParsing="false" text="Focus on technologogy and society" />
+            </children>
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </VBox.margin>
+        </FlowPane>
+    </children>
+</VBox>

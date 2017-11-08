@@ -1,0 +1,14 @@
+// css sheet for selecting the units in choose Xgrade;
+
+.button{
+-fx-background-color: #2b8930;
+-fx-color: #000000
+}
+.scroll-pane {
+    -fx-background-color: black;
+}
+
+.button:hover{
+-fx-background-color: #e64a19
+}
+
