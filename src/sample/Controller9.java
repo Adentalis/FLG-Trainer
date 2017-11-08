@@ -22,7 +22,6 @@ public class Controller9 {
 
 
     public void buttonPressed(ActionEvent actionEvent) {
-        System.out.println(actionEvent.getSource().toString());
     }
 
 }
