@@ -19,31 +19,31 @@
                   </Button>
             <FlowPane hgap="5.0" prefHeight="30.0" prefWidth="800.0" vgap="5.0">
                <children>
-                  <Button fx:id="b911_Intro" minWidth="100.0" mnemonicParsing="false" prefHeight="40.0" text="Intro">
+                  <Button fx:id="b911_Intro" minWidth="100.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="Intro">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="b912_AGlobalSport" minWidth="100.0" mnemonicParsing="false" prefHeight="40.0" text="A global sport">
+                  <Button fx:id="b912_AGlobalSport" minWidth="100.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="A global sport">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="b913_AnInternetLifestyle" minWidth="100.0" mnemonicParsing="false" prefHeight="40.0" text="An internet lifestyle">
+                  <Button fx:id="b913_AnInternetLifestyle" minWidth="100.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="An internet lifestyle">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="b914_PlayFair" minWidth="100.0" mnemonicParsing="false" prefHeight="40.0" text="Play fair">
+                  <Button fx:id="b914_PlayFair" minWidth="100.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="Play fair">
                       <font>
                       <Font size="16.0" />
                   </font>
                   </Button>
-                  <Button fx:id="b915_WorkingOnAProject" minWidth="100.0" mnemonicParsing="false" prefHeight="40.0" text="Working on a project"><font>
+                  <Button fx:id="b915_WorkingOnAProject" minWidth="100.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="Working on a project"><font>
                       <Font size="16.0" />
                   </font>
                   </Button>
-                  <Button fx:id="b916_FocusOnTechnologyAnsSociety" mnemonicParsing="false" prefHeight="40.0" text="Focus on technology and society"><font>
+                  <Button fx:id="b916_FocusOnTechnologyAnsSociety" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="Focus on technology and society"><font>
                       <Font size="16.0" />
                   </font>
                   </Button>
