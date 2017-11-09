@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 //auf richtigen Import achten!!!
 import javafx.event.ActionEvent;
 
+import java.util.ArrayList;
 
 
 /**
@@ -17,37 +18,55 @@ public class Controller9 {
     @FXML
     public Button b910_OneWorld,b911_Intro,b912_AGlobalSport,b913_AnInternetLifestyle,b914_PlayFair,b915_WorkingOnAProject,b916_FocusOnTechnologyAnsSociety;
     public boolean b911 = false;
+    ArrayList<Button> activeButtonList = new ArrayList();
+    boolean firstTime = false;
+
 
     String enableButton = "-fx-background-color: #e6f319";
 
 
     public void buttonPressed(ActionEvent actionEvent) {
-        Button btn = (Button)actionEvent.getSource();
-        String buttonId = btn.getId();
 
-        if(b911_Intro ==((Button) actionEvent.getSource())){
-            if(b911==false){
-                b911=true;
-                System.out.println("in");
-                //b911_Intro.setStyle(enableButton);
+        updateArrayList(((Button)actionEvent.getSource()));
+      //  updateWordCounter();
+        updateFrontEnd();
 
-                b911_Intro.getStylesheets().add("/data/css/test.css");
-
-                // b911_Intro.setStyle(t);
-            }else{
-                b911 = false;
-                b911_Intro.getStylesheets().remove(0);
-                b911_Intro.getStylesheets().add("/data/css/class.css");
+    /**    for(Button b : buttonList){
+            if(b==((Button) actionEvent.getSource())){
+                System.out.println(b.getId());
             }
         }
 
 
-        //Get the pressed Button and change it color
-        //((Button) actionEvent.getSource()).setStyle(enableButton);
+    /**    if(b911_Intro ==((Button) actionEvent.getSource())){
+            if(b911==false){
+                b911=true;
+                System.out.println("in");
+                b911_Intro.getStylesheets().add("/data/css/orange.css");
+            }else{
+                b911 = false;
+                b911_Intro.getStylesheets().clear();
+            }
+        }
+*/
+    }
+
+    private void updateFrontEnd() {
 
 
+    }
 
-        System.out.println(buttonId);
+    private void updateArrayList(Button source) {
+        if (activeButtonList.contains(source)){
+            System.out.println("Already in");
+            activeButtonList.remove(source);
+            source.getStylesheets().clear();
+
+        }else{
+            System.out.println("not in now added");
+            activeButtonList.add(source);
+            source.getStylesheets().add("/data/css/orange.css");
+        }
     }
 
 
