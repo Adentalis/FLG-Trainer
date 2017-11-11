@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="800.0" style="-fx-background-color: #143e18;" stylesheets="@../data/css/choose.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller9">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="800.0" style="-fx-background-color: #143e18;" stylesheets="@../data/css/choose.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller9">
    <content>
             <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="800.0" style="-fx-background-color: #143e18;">
                <children>
-                  <Button fx:id="b910_OneWorld" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="50.0" prefWidth="236.0" text="Unit 1 - One world 9.">
+                  <Button fx:id="b910_OneWorld" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="50.0" prefWidth="236.0" text="Unit 1 - One world">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -52,29 +52,29 @@
                   <Insets bottom="20.0" top="5.0" />
                </padding>
             </FlowPane>
-                  <Button mnemonicParsing="false" prefHeight="50.0" text="Unit 2 - From school to work">
+                  <Button fx:id="b920_FromSchoolToWork" mnemonicParsing="false" prefHeight="50.0" text="Unit 2 - From school to work">
                <font>
                   <Font size="20.0" />
                </font></Button>
                   <FlowPane hgap="5.0" prefHeight="9.0" prefWidth="800.0" vgap="5.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="40.0" text="Intro"><font>
+                        <Button fx:id="b921_Intro" mnemonicParsing="false" prefHeight="40.0" text="Intro"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="40.0" text="Looking forward"><font>
+                        <Button fx:id="b922_LookingForward" mnemonicParsing="false" prefHeight="40.0" text="Looking forward"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="40.0" text="A personal statement"><font>
+                        <Button fx:id="b923_APersonalStatement" mnemonicParsing="false" prefHeight="40.0" text="A personal statement"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="40.0" text="Applying for a job"><font>
+                        <Button fx:id="b924_ApplyingForAJob" mnemonicParsing="false" prefHeight="40.0" text="Applying for a job"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="40.0" text="Jon makes a descision"><font>
+                        <Button fx:id="b925_JonMakesADescision" mnemonicParsing="false" prefHeight="40.0" text="Jon makes a descision"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>
@@ -226,7 +226,7 @@
                         <Insets bottom="10.0" left="10.0" right="100.0" />
                      </FlowPane.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="40.0" text="Starten">
+                  <Button fx:id="bstart" mnemonicParsing="false" onAction="#startGame" prefHeight="40.0" text="Starten">
                      <font>
                         <Font size="16.0" />
                      </font>
