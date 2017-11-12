@@ -52,29 +52,29 @@
                   <Insets bottom="20.0" top="5.0" />
                </padding>
             </FlowPane>
-                  <Button fx:id="b920_FromSchoolToWork" mnemonicParsing="false" prefHeight="50.0" text="Unit 2 - From school to work">
+                  <Button fx:id="b920_FromSchoolToWork" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="50.0" text="Unit 2 - From school to work">
                <font>
                   <Font size="20.0" />
                </font></Button>
                   <FlowPane hgap="5.0" prefHeight="9.0" prefWidth="800.0" vgap="5.0">
                      <children>
-                        <Button fx:id="b921_Intro" mnemonicParsing="false" prefHeight="40.0" text="Intro"><font>
+                        <Button fx:id="b921_Intro" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="Intro"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>
-                        <Button fx:id="b922_LookingForward" mnemonicParsing="false" prefHeight="40.0" text="Looking forward"><font>
+                        <Button fx:id="b922_LookingForward" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="Looking forward"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>
-                        <Button fx:id="b923_APersonalStatement" mnemonicParsing="false" prefHeight="40.0" text="A personal statement"><font>
+                        <Button fx:id="b923_APersonalStatement" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="A personal statement"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>
-                        <Button fx:id="b924_ApplyingForAJob" mnemonicParsing="false" prefHeight="40.0" text="Applying for a job"><font>
+                        <Button fx:id="b924_ApplyingForAJob" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="Applying for a job"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>
-                        <Button fx:id="b925_JonMakesADescision" mnemonicParsing="false" prefHeight="40.0" text="Jon makes a descision"><font>
+                        <Button fx:id="b925_JonMakesADescision" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="40.0" text="Jon makes a descision"><font>
                             <Font size="16.0" />
                         </font>
                         </Button>

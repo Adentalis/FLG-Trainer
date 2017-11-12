@@ -37,10 +37,6 @@ public class MenuController {
         wholeMenu.setBottom(bot);
 
     }
-    public void setBotto(){
-        System.out.println("gs");
-
-    }
 
 
     public void setOnMouseDragged(MouseEvent event) {
@@ -61,6 +57,7 @@ public class MenuController {
     }
 
     public void changeToLernen(ActionEvent actionEvent) throws IOException {
+    //
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("chooseClass.fxml"));
         Parent sample = fxmlLoader.load();
         Parent bot = FXMLLoader.load(getClass().getResource("9grade.fxml"));
