@@ -4,7 +4,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 //auf richtigen Import achten!!!
 import javafx.event.ActionEvent;
-
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import java.util.ArrayList;
 
 
@@ -169,9 +176,12 @@ public class Controller9 {
     }
 
     public void startGame(ActionEvent actionEvent) {
-        for(Button b : activeButtonList){
+        /*for(Button b : activeButtonList){
             System.out.println(b.getId());
         }
+        */
+        System.out.println("change scene");
+
     }
 }
 

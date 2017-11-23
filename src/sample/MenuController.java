@@ -10,7 +10,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -33,11 +32,6 @@ public class MenuController {
 
     }
 
-    public void setBottom(ScrollPane bot){
-        wholeMenu.setBottom(bot);
-
-    }
-
 
     public void setOnMouseDragged(MouseEvent event) {
 
@@ -56,81 +50,27 @@ public class MenuController {
 
     }
 
-    public void changeToLernen(ActionEvent actionEvent) throws IOException {
-    //
+    public void chooseWords(ActionEvent actionEvent) throws IOException {
+        System.out.println(((Button) actionEvent.getSource()).getId());
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("chooseClass.fxml"));
         Parent sample = fxmlLoader.load();
         Parent bot = FXMLLoader.load(getClass().getResource("9grade.fxml"));
-        FlowPane test = new FlowPane(sample);
-        VBox vbox = new VBox(bot);
+        FlowPane flowPane = new FlowPane(sample);
 
-        ((ChooseClassController)fxmlLoader.getController()).setLabel("Vokabeln lernen");
+        ((ChooseClassController)fxmlLoader.getController()).setLabel(((Button) actionEvent.getSource()).getId());
 
         back.setDisable(false);
         back.setOpacity(1);
-        wholeMenu.setRight(test);
+        wholeMenu.setRight(flowPane);
         wholeMenu.setCenter(null);
         wholeMenu.getLeft().setTranslateX(-200);
         wholeMenu.setBottom(bot);
         wholeMenu.getBottom().setTranslateY(100);
 
-    }
-
-
-    public void changeToTrain(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("chooseClass.fxml"));
-        Parent sample = fxmlLoader.load();
-        Parent bot = FXMLLoader.load(getClass().getResource("9grade.fxml"));
-        FlowPane test = new FlowPane(sample);
-        VBox vbox = new VBox(bot);
-
-        ((ChooseClassController)fxmlLoader.getController()).setLabel("Übung");
-
-        back.setDisable(false);
-        back.setOpacity(1);
-        wholeMenu.setRight(test);
-        wholeMenu.setCenter(null);
-        wholeMenu.getLeft().setTranslateX(-200);
-        wholeMenu.setBottom(bot);
-        wholeMenu.getBottom().setTranslateY(100);
-    }
-
-    public void changeToAbfrage(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("chooseClass.fxml"));
-        Parent sample = fxmlLoader.load();
-        Parent bot = FXMLLoader.load(getClass().getResource("9grade.fxml"));
-        FlowPane test = new FlowPane(sample);
-        VBox vbox = new VBox(bot);
-
-        ((ChooseClassController)fxmlLoader.getController()).setLabel("Abfrage simulieren");
-
-        back.setDisable(false);
-        back.setOpacity(1);
-        wholeMenu.setRight(test);
-        wholeMenu.setCenter(null);
-        wholeMenu.getLeft().setTranslateX(-200);
-        wholeMenu.setBottom(bot);
-        wholeMenu.getBottom().setTranslateY(100);
-    }
-
-    public void changeToSurvival(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("chooseClass.fxml"));
-        Parent sample = fxmlLoader.load();
-        Parent bot = FXMLLoader.load(getClass().getResource("9grade.fxml"));
-        FlowPane test = new FlowPane(sample);
-        VBox vbox = new VBox(bot);
-
-        ((ChooseClassController)fxmlLoader.getController()).setLabel("Survival-Modus");
-        back.setDisable(false);
-        back.setOpacity(1);
-        wholeMenu.setRight(test);
-        wholeMenu.setCenter(null);
-        wholeMenu.getLeft().setTranslateX(-200);
-        wholeMenu.setBottom(bot);
-        wholeMenu.getBottom().setTranslateY(100);
     }
 
     public void changeToMainMenu(ActionEvent actionEvent) throws IOException {
+        System.out.println(((Button) actionEvent.getSource()).getId());
 
         Parent sample = FXMLLoader.load(getClass().getResource("start.fxml"));
         Pane test = new Pane(sample);
